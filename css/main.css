@@ -92,7 +92,7 @@
     html {
       font-size: 15px;
       box-sizing: border-box;
-      min-width: 374px;
+      min-width: 359px;
     }
 
     body {
@@ -191,11 +191,14 @@
       margin: 0 0 22px 0;
     }
 
+    footer {
+      position: fixed;
+      bottom: 0;
+    }
+    
     .attribution {
       color:hsl(0, 0%, 100%);
       font-size: 0.7778em;
-      position: fixed;
-      bottom: 0;
     }
 
     .attribution a {
@@ -291,73 +294,74 @@
      Modify as content requires.
      ========================================================================== */
   
-  @media only screen and (min-width: 1440px) {
-    /* Desktop Styles */
-
-    body {
-      margin: 178px 0;
+     @media only screen and (min-width: 1220px) {
+      /* Laptop and Desktop Styles */
+  
+      body {
+        margin: 178px 0;
+      }
+  
+      main {
+        width: 1109px;
+        height: 445px;
+        margin: 0;
+      }
+  
+      .stats-card {
+        width: 1109px;
+        height: 445px;
+        display: flex;
+        flex-flow: row-reverse;
+      }
+  
+      img {
+        width: 541px;
+        height: 446px;
+        border-radius: 0 7px 7px 0;
+        border-bottom-right-radius: 7px;
+      }
+  
+      .overlay {
+        width: 541px;
+        height: 446px;
+        opacity: 0.4;
+        top: 178px;
+        border-radius: 7px;
+        border-bottom-right-radius: 7px;
+      }
+  
+      .content-wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+        margin: 50px 100px 50px 80px;
+        text-align: left;
+        align-items: baseline;
+      }
+  
+      h1 {
+        text-align: left;
+        font-size: 2.3333em;
+      }
+  
+      .benefits {
+        margin: 20px 0 0 0;
+      }
+  
+      .business-stats {
+        display: flex;
+        margin: 70px 0 35px 0;
+      }
+  
+      .company-stats, .templates-stats {
+        padding: 0 60px 0 0;
+      }
+  
+      .numbers, .text {
+        text-align: left;
+      }
+  
     }
-
-    main {
-      width: 1109px;
-      height: 445px;
-      margin: 0;
-    }
-
-    .stats-card {
-      width: 1109px;
-      height: 445px;
-      display: flex;
-      flex-flow: row-reverse;
-    }
-
-    img {
-      width: 541px;
-      height: 446px;
-      border-radius: 0 7px 7px 0;
-      border-bottom-right-radius: 7px;
-    }
-
-    .overlay {
-      width: 541px;
-      height: 446px;
-      opacity: 0.4;
-      top: 178px;
-      border-radius: 7px;
-      border-bottom-right-radius: 7px;
-    }
-
-    .content-wrapper {
-      display: flex;
-      flex-flow: column nowrap;
-      margin: 50px 100px 50px 80px;
-      text-align: left;
-      align-items: baseline;
-    }
-
-    h1 {
-      text-align: left;
-      font-size: 2.3333em;
-    }
-
-    .benefits {
-      margin: 20px 0 0 0;
-    }
-
-    .business-stats {
-      display: flex;
-      margin: 70px 0 35px 0;
-    }
-
-    .company-stats, .templates-stats {
-      padding: 0 60px 0 0;
-    }
-
-    .numbers, .text {
-      text-align: left;
-    }
-
-  }
+    
   
   @media print,
     (-webkit-min-device-pixel-ratio: 1.25),
